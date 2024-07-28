@@ -138,7 +138,7 @@ function voteWhite() {
 
 let candidato = {
     erenilson: {
-        name: 'ERENILSON',
+        name: 'VEREADOR',
         nameComplete: 'ERENILSON TRAJANO',
         broken: 'PP',
         img: "url('./images/erenilson.jpeg')",
