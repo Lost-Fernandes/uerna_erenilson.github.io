@@ -1,10 +1,10 @@
-document.querySelectorAll('.btn').forEach((button) => {
+//document.querySelectorAll('.btn').forEach((button) => {
     document.getElementById(button.id).addEventListener('click', () => {
         voting(button);
     });
 });
 
-let num1 = document.getElementById('num1');
+//let num1 = document.getElementById('num1');
 let num2 = document.getElementById('num2');
 let num3 = document.getElementById('num3');
 let num4 = document.getElementById('num4');
@@ -41,13 +41,13 @@ function voting(button) {
     }
 }
 
-let nameTitle = document.getElementById('nameTitle');
+//let nameTitle = document.getElementById('nameTitle');
 let nameCandidate = document.getElementById('nameCandidate');
 let broken = document.getElementById('brokenCandidate');
 let img = document.getElementById('imgPresident');
 let legend = document.getElementById('legend');
 
-function showCandidate() {
+//function showCandidate() {
     const candidateNumber = `${num1.value}${num2.value}${num3.value}${num4.value}${num5.value}`;
 
     if (candidateNumber === '11113') {
@@ -74,7 +74,7 @@ function displayInvalid() {
     clearNumbers();
 }
 
-function clearNumbers() {
+//function clearNumbers() {
     num1.value = null;
     num2.value = null;
     num3.value = null;
@@ -87,7 +87,7 @@ function clearNumbers() {
     num5.innerHTML = '';
 }
 
-document.getElementById('btnConfirm').addEventListener('click', confirmVote);
+//document.getElementById('btnConfirm').addEventListener('click', confirmVote);
 
 function confirmVote() {
     if (document.getElementById('end').style.display == 'flex') {
@@ -115,9 +115,9 @@ function correct() {
     document.getElementById('end').style.display = 'none';
 }
 
-document.getElementById('btnWhite').addEventListener('click', voteWhite);
+//document.getElementById('btnWhite').addEventListener('click', voteWhite);
 
-function voteWhite() {
+//function voteWhite() {
     nameTitle.innerText = 'VOTAR EM BRANCO';
     nameCandidate.innerText = '';
     broken.innerText = '';
@@ -136,7 +136,7 @@ function voteWhite() {
     legend.style.display = 'none';
 }
 
-let candidato = {
+//let candidato = {
     erenilson: {
         name: 'VEREADOR',
         nameComplete: 'ERENILSON TRAJANO',
